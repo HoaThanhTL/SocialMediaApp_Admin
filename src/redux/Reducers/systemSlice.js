@@ -34,7 +34,10 @@ const systemSlice = createSlice({
         state.loading = false;
         state.status = "succeeded";
         state.users = action.payload;
+        
       })
+      
+      
       .addCase(getAllUser.rejected, (state) => {
         state.loading = false;
         state.status = "failed";
