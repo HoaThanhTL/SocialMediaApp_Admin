@@ -1,0 +1,22 @@
+.body {
+    display: flex;
+    /* flex-direction: row; */
+    min-height: vh;
+    /* background-image: ; */
+}
+
+.component {
+    justify-self: flex-end;
+    width: 100%;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    height: 100%;
+}
+
+/* .nav {
+    background-color: #edf2f7;
+    
+} */
