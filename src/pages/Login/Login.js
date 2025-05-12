@@ -48,6 +48,13 @@ export default function Login({ setIsLogin }) {
           case "ADMIN":
             navigate("/dashboard");
             break;
+          case "PlAYER":
+            navigate("/error");
+            toast.error("bạn không có quyền !");
+          case "KOL":
+            navigate("/error");
+            toast.error("bạn không có quyền !");
+            break;
           default:
             navigate("/error");
             toast.error("Đăng nhập thất bại !");

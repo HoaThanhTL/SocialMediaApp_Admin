@@ -1,7 +1,6 @@
 import api from "./api";
 export const getListUser = async () => {
   const response = await api.get(`odata/Users/Active/User`);
-  console,log()
   return response.data;
 };
 export const getPostAdmin = async () => {

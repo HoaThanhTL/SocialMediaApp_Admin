@@ -19,7 +19,6 @@ export const getAllUser = createAsyncThunk(
   async (thunkAPI) => {
     try {
       const response = await getListUser();
-      console.log('response response', response);
       return response;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data);
